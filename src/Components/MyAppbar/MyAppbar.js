@@ -15,20 +15,11 @@ import MenuIcon from '@material-ui/icons/Menu'
 import SearchIcon from '@material-ui/icons/Search'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 import Button from '@material-ui/core/Button'
-import youtube from '../../Assets/youtube-512.webp'
 import {useMyAppbarStyles} from './useMyAppbarStyles'
 import VideoCallIcon from '@material-ui/icons/VideoCall'
 import AppsIcon from '@material-ui/icons/Apps';
 import Avatar from '@material-ui/core/Avatar'
 import { useTheme } from '@material-ui/core/styles'
-import HomeIcon from '@material-ui/icons/Home'
-import WhatshotIcon from '@material-ui/icons/Whatshot'
-import SubscriptionsIcon from '@material-ui/icons/Subscriptions'
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
-import HistoryIcon from '@material-ui/icons/History'
-import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline'
-import WatchLaterIcon from '@material-ui/icons/WatchLater'
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt'
 import {GlobalState} from '../../globalState'
 import {Link} from 'react-router-dom'
 
@@ -52,12 +43,6 @@ export function MyAppbar() {
           </Typography>
             
           <div className={classes.sectionDesktop}>
-            <IconButton color="inherit">
-                <VideoCallIcon />
-            </IconButton>
-            <IconButton color='inherit'>
-              <AppsIcon />
-            </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge badgeContent={1} color="secondary">
                 <NotificationsIcon />
@@ -78,7 +63,10 @@ export function MyAppbar() {
         <div className={classes.menu}>
           <Avatar 
             src='https://avatars.dicebear.com/api/male/john.svg?mood[]=happy' 
-            className={classes.avatar} />
+            className={classes.avatar} 
+            
+          />
+
 
         </div>
         <div className={classes.search}>

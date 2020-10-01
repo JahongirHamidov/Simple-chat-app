@@ -42,7 +42,6 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       border: '1px solid #303030',
       borderRadius: theme.shape.borderRadius,
       backgroundColor: '#fff',
-      padding: '2px',
       borderRadius: 0,
       width: '100%',
 
@@ -68,7 +67,7 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     },
     menu: {
       height: '64px',
-      backgroundColor: '#eee'
+      backgroundColor: '#eee',
 
     },
     avatar: {
@@ -79,7 +78,7 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       [theme.breakpoints.up('md')]: {
         display: 'flex',
       },
-      marginLeft: '55%'
+      marginLeft: '62%'
     },
     drawer: {
       width: drawerWidth,

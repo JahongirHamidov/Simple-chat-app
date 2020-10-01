@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <MyAppbar/>
+        
         <Switch>
             <Route path='/' exact>
               <div className='home'>
