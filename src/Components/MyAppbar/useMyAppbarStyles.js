@@ -36,27 +36,23 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       flexWrap: 'wrap',
       border: '1px solid #303030',
       borderRadius: theme.shape.borderRadius,
-      backgroundColor: '#181818',
-      marginRight: '-1px',
+      backgroundColor: '#fff',
       padding: '2px',
       borderRadius: 0,
       width: '100%',
-      [theme.breakpoints.up('sm')]: {
-        marginLeft: '15%',
-        width: 'auto',
-      },
+      
       
     },
     searchIcon: {
       height: '100%',
       display: 'flex',
-      backgroundColor:'#252525',
+      backgroundColor:'#666',
       borderRadius: 0,
       color: '#505050'
     },
     inputRoot: {
       color: 'inherit',
-      width: '40vw',
+      width: '12.8vw',
       justifyContent: 'left'
     },
     inputInput: {
@@ -64,7 +60,7 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       paddingLeft: `${theme.spacing(1)}px`,
       paddingRight: `${theme.spacing(1)}px`,
       transition: theme.transitions.create('width'),
-      width: '200%',
+      width: '100%',
     },
     sectionDesktop: {
       display: 'none',

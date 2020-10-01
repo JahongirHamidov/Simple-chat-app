@@ -50,20 +50,7 @@ export function MyAppbar() {
               </Typography>
             </Link>
           </Typography>
-            <div className={classes.search}>
-              <InputBase
-                placeholder="Search…"
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                }}
-                inputProps={{ 'aria-label': 'search' }}
-              />
-            </div>
-              <Button className={classes.searchIcon}>
-                <SearchIcon />
-              </Button>
-          <div className={classes.grow} />
+            
           <div className={classes.sectionDesktop}>
             <IconButton color="inherit">
                 <VideoCallIcon />
@@ -97,7 +84,25 @@ export function MyAppbar() {
           }),
         }}
       >
-                
+
+
+        <div className={classes.search}>
+              <InputBase
+                placeholder="Search…"
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput,
+                }}
+                inputProps={{ 'aria-label': 'search' }}
+              />
+              <Button className={classes.searchIcon}>
+                <SearchIcon />
+              </Button>
+        </div>
+        <div className={classes.grow} />
+
+
+
         <List className={classes.list}>
           <Link to='/'>
             <ListItem button className={classes.font}>
