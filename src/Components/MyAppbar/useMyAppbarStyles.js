@@ -16,7 +16,8 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     },
     appbar: {
       backgroundColor: '#303030',
-      position: 'fixed'
+      position: 'fixed',
+      marginLeft: '240px'
     },
     menuButton: {
       marginRight: 36,
@@ -40,8 +41,7 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       padding: '2px',
       borderRadius: 0,
       width: '100%',
-      
-      
+
     },
     searchIcon: {
       height: '100%',
@@ -69,55 +69,38 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       },
     },
     drawer: {
-        width: 0,
-        flexShrink: 0,
-        whiteSpace: 'nowrap',
-        backgroundColor: '#303030'
-      },
-      drawerOpen: {
-        width: drawerWidth,
-        transition: theme.transitions.create('width', {
-          easing: theme.transitions.easing.sharp,
-          duration: theme.transitions.duration.enteringScreen,
-        }),
-        marginTop: '64px',
-        backgroundColor: '#303030'
+      width: drawerWidth,
+      flexShrink: 0,
+      whiteSpace: 'nowrap',
+      backgroundColor: '#fff',
+      marginTop: 64,
 
-        
-      },
-    
-      list: {
-          backgroundColor: '#303030',
-          paddingLeft: '5%'
-      },
-      divider: {
-          color: '#303030',
-          backgroundColor: 'grey'
-      },
-      font: {
-          color: 'white' ,
-      },
-      icon: {
-          color: '#909090'
-      },  
-      content: {
-        flexGrow: 1,
-        padding: theme.spacing(3),
-        transition: theme.transitions.create('margin', {
-          easing: theme.transitions.easing.sharp,
-          duration: theme.transitions.duration.leavingScreen,
-        }),
-        marginLeft: -drawerWidth,
-        
-      },
-      contentShift: {
-        transition: theme.transitions.create('margin', {
-          easing: theme.transitions.easing.easeOut,
-          duration: theme.transitions.duration.enteringScreen,
-        }),
-        marginLeft: 0,
-      },
-      
-   
+    },
+    list: {
+      backgroundColor: '#fff',
+      paddingLeft: '5%'
+    },
+    font: {
+      color: 'black' ,
+    },
+    icon: {
+      color: '#909090'
+    },  
+    content: {
+      flexGrow: 1,
+      padding: theme.spacing(3),
+      transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+      marginLeft: -drawerWidth,      
+    },
+    contentShift: {
+      transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+      marginLeft: 0,
+    }, 
   }))
   

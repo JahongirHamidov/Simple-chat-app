@@ -70,22 +70,11 @@ export function MyAppbar() {
         </Toolbar>
       </AppBar>
 
-
       <Drawer
         variant="permanent"
-        className={clsx(classes.drawer, {
-          [classes.drawerOpen]: open,
-          [classes.drawerClose]: !open,
-        })}
-        classes={{
-          paper: clsx({
-            [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-          }),
-        }}
+        className={classes.drawer} 
       >
-
-
+        
         <div className={classes.search}>
               <InputBase
                 placeholder="Search…"
@@ -100,7 +89,6 @@ export function MyAppbar() {
               </Button>
         </div>
         <div className={classes.grow} />
-
 
 
         <List className={classes.list}>
