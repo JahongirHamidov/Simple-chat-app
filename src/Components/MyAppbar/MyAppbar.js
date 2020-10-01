@@ -73,8 +73,14 @@ export function MyAppbar() {
       <Drawer
         variant="permanent"
         className={classes.drawer} 
-      >
         
+      >
+        <div className={classes.menu}>
+          <Avatar 
+            src='https://avatars.dicebear.com/api/male/john.svg?mood[]=happy' 
+            className={classes.avatar} />
+
+        </div>
         <div className={classes.search}>
               <InputBase
                 placeholder="Search…"
@@ -88,11 +94,10 @@ export function MyAppbar() {
                 <SearchIcon />
               </Button>
         </div>
-        <div className={classes.grow} />
 
 
         <List className={classes.list}>
-          <Link to='/'>
+          <Link to='/' className={classes.link}>
             <ListItem button className={classes.font}>
               <ListItemIcon className={classes.icon}>
                 <Avatar src='https://avatars.dicebear.com/api/male/john.svg?mood[]=happy'/>

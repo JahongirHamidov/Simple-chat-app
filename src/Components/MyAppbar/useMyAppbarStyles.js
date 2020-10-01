@@ -6,18 +6,22 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       flexGrow: 1,
       display: 'flex',
     },
+    link: {
+      textDecoration: 'none'
+    },
     brand: {
       textDecoration: 'none',
-      color: 'white',
+      color: 'black',
     },
     purple: {
         color: 'white',
         backgroundColor:'green'
     },
     appbar: {
-      backgroundColor: '#303030',
+      backgroundColor: '#eee',
       position: 'fixed',
-      marginLeft: '240px'
+      marginLeft: '240px',
+      color: 'black'
     },
     menuButton: {
       marginRight: 36,
@@ -46,7 +50,7 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     searchIcon: {
       height: '100%',
       display: 'flex',
-      backgroundColor:'#666',
+      backgroundColor:'#999',
       borderRadius: 0,
       color: '#505050'
     },
@@ -62,11 +66,20 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
       transition: theme.transitions.create('width'),
       width: '100%',
     },
+    menu: {
+      height: '64px',
+      backgroundColor: '#eee'
+
+    },
+    avatar: {
+     padding: '5%',
+    },
     sectionDesktop: {
       display: 'none',
       [theme.breakpoints.up('md')]: {
         display: 'flex',
       },
+      marginLeft: '55%'
     },
     drawer: {
       width: drawerWidth,
@@ -102,5 +115,6 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     }),
       marginLeft: 0,
     }, 
+
   }))
   
