@@ -8,7 +8,7 @@ export function Content() {
 
   return (
       <main role='main'>
-       
+          
       </main>
   )
 }

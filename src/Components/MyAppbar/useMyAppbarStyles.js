@@ -9,9 +9,13 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     link: {
       textDecoration: 'none'
     },
-    brand: {
-      textDecoration: 'none',
+    user: {
       color: 'black',
+      display: 'flex',
+      flexDirection: 'row',
+    },
+    userName: {
+      
     },
     purple: {
         color: 'white',
@@ -72,6 +76,9 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     },
     avatar: {
      padding: '5%',
+    },
+    textGrey: {
+      color: 'grey',
     },
     sectionDesktop: {
       display: 'none',

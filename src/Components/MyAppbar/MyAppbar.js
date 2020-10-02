@@ -35,11 +35,16 @@ export function MyAppbar() {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} noWrap>
-            <Link to='/' className={classes.brand}>
-              <Typography component='h4' variant='h4' className={classes.brand}>
-                Chat app
-              </Typography>
-            </Link>
+              <div className={classes.user}>
+                <Avatar 
+                    src='https://avatars.dicebear.com/api/male/john.svg?mood[]=happy' 
+                    className={classes.avatar}
+                  />
+                  <div className={classes.userName}>
+                    <Typography component='h6' variant='h6'>Room name   ...</Typography>
+                    <Typography className={classes.textGrey}>last seen at ...</Typography>
+                  </div>
+              </div>
           </Typography>
             
           <div className={classes.sectionDesktop}>
@@ -66,7 +71,9 @@ export function MyAppbar() {
             className={classes.avatar} 
             
           />
-
+          <Typography>
+            Jahongir
+          </Typography>
 
         </div>
         <div className={classes.search}>
