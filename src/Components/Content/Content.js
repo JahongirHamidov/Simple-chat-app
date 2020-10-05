@@ -11,7 +11,7 @@ export function Content() {
   return (
       <main role='main'className={classes.main}>
         <Paper elevation={3} className={classes.paper}>
-            
+             
         </Paper>
       </main>
   )
