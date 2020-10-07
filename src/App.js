@@ -10,20 +10,20 @@ import {Provider} from './globalState'
 function App() {
   return (
     <Provider>
-    <BrowserRouter>
-      <div className="App">
-        <MyAppbar/>
-            <Content/>
-        
-        <Switch>
-            <Route path='/' exact>
-              <div className='home'>
-              </div>
-            </Route>
-            
-        </Switch>
-      </div>
-    </BrowserRouter>
+      <BrowserRouter>
+        <div className="App">
+          <MyAppbar/>
+              <Content/>
+          
+          <Switch>
+              <Route path='/' exact>
+                <div className='home'>
+                </div>
+              </Route>
+              
+          </Switch>
+        </div>
+      </BrowserRouter>
     </Provider>
   )
 }
