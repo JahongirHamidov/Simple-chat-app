@@ -92,7 +92,7 @@ export function MyAppbar() {
 
 
         <List className={classes.list}>
-          <Link to='/' className={classes.link}>
+          <Link to='/chat' className={classes.link}>
             <ListItem button className={classes.font}>
               <ListItemIcon className={classes.icon}>
                 <Avatar src='https://avatars.dicebear.com/api/male/john.svg?mood[]=happy'/>
@@ -100,6 +100,7 @@ export function MyAppbar() {
               <ListItemText primary={'James'} />
             </ListItem>
           </Link>
+          
             <ListItem button className={classes.font}>
               <ListItemIcon className={classes.icon}>
                 <Avatar src='https://avatars.dicebear.com/api/male/john.svg?mood[]=happy'/>

@@ -13,14 +13,18 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <MyAppbar/>
-              <Content/>
           
           <Switch>
               <Route path='/' exact>
                 <div className='home'>
+                  chat here ...
                 </div>
               </Route>
-              
+              <Route path='/chat' exact>
+                <div className='home'>
+                  <Content />
+                </div>
+              </Route>
           </Switch>
         </div>
       </BrowserRouter>

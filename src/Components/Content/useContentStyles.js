@@ -8,8 +8,6 @@ export const useContentStyles = makeStyles((theme) => ({
        //backgroundImage: image,
 
      },
-     paper: {
-       width: 200
-     }
+    
   }))
   
