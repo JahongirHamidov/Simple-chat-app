@@ -11,12 +11,15 @@ export function Content() {
 
 
   return (
-      <main role='main'className={classes.main}>
-        <div>  
+      <main role='main' className={classes.main}>
+        
+        <div>
+          
+        </div>
 
+        <div>  
           <TextField id="outlined-basic" label="Message" variant="outlined" />
           <Button variant='contained' color='primary'>Send</Button>
-        
         </div>
       </main>
   )

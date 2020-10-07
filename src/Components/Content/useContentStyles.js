@@ -5,7 +5,7 @@ const drawerWidth = 240
 
 export const useContentStyles = makeStyles((theme) => ({
      main: {
-       //backgroundImage: image,
+       backgroundImage: image,
 
      },
     
