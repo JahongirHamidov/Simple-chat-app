@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import image from '../../Assets/bgImage.png'
-import { Box, Container } from '@material-ui/core'
+import { Container } from '@material-ui/core'
 
 
 export function Content() {
@@ -16,11 +16,9 @@ export function Content() {
         
         <div className={classes.chatPlace}>
           <Container>
-            <Box>
-              <span className={classes.bubble}>
-                hello
-              </span>
-            </Box>
+            <span className={classes.bubble}>
+              hello
+            </span>
             <span className={classes.bubble}>
               hello
             </span>
