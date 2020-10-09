@@ -13,13 +13,24 @@ export function Content() {
   return (
       <main role='main' className={classes.main}>
         
-        <div>
+        <div className={classes.chatPlace}>
           
         </div>
 
         <div>  
-          <TextField id="outlined-basic" label="Message" variant="outlined" />
-          <Button variant='contained' color='primary'>Send</Button>
+          <TextField 
+            id="outlined-basic" 
+            label="Message" 
+            variant="outlined" 
+            className={classes.textField} 
+          />
+          <Button 
+            variant='contained' 
+            color='primary'
+            className={classes.sendButton}
+          >
+              Send
+          </Button>
         </div>
       </main>
   )
