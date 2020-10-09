@@ -10,9 +10,9 @@ export const useContentStyles = makeStyles((theme) => ({
      },
      chatPlace: {
        width: 1116,
-       height: 430,
-       backgroundImage: `url(${image})`,
-       backgroundColor: ''
+       height: '70vh',
+       paddingTop: '2%',
+       display: 'flex',
      },
      textField: {
         width: '80%',
@@ -20,6 +20,14 @@ export const useContentStyles = makeStyles((theme) => ({
      sendButton: {
       padding: 15 
      },
+     bubble: {
+       backgroundColor: '#dedede',
+       border: '1px solid white',
+       borderRadius: '10px',
+       padding: 5,
+       flexDirection: 'column'
+       
+     }
     
   }))
   

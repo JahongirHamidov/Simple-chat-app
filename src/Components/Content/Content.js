@@ -4,6 +4,7 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import image from '../../Assets/bgImage.png'
+import { Box, Container } from '@material-ui/core'
 
 
 export function Content() {
@@ -14,9 +15,19 @@ export function Content() {
       <main role='main' className={classes.main}>
         
         <div className={classes.chatPlace}>
+          <Container>
+            <Box>
+              <span className={classes.bubble}>
+                hello
+              </span>
+            </Box>
+            <span className={classes.bubble}>
+              hello
+            </span>
           
+          </Container>
         </div>
-
+        
         <div>  
           <TextField 
             id="outlined-basic" 
