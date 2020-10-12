@@ -72,7 +72,11 @@ export const useMyAppbarStyles = makeStyles((theme) => ({
     menu: {
       height: '64px',
       backgroundColor: '#eee',
+      display: 'flex'
 
+    },
+    myName: {
+      padding: '4%'
     },
     avatar: {
      padding: '5%',

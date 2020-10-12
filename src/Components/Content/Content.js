@@ -25,7 +25,7 @@ export function Content() {
                   hello
                 </span>
                 <span className={classes.bubble}>
-                  hello
+                  hello my friend
                 </span> 
             </Grid>
           </div>

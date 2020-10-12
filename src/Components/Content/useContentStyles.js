@@ -24,9 +24,13 @@ export const useContentStyles = makeStyles((theme) => ({
        backgroundColor: '#dedede',
        border: '1px solid white',
        borderRadius: '10px',
-       padding: 5,
+       padding: 10,
+       margin: 2,
        flexDirection: 'column'
        
+     },
+     sendMessage: {
+        flex: 1
      }
     
   }))

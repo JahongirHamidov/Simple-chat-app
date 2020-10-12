@@ -71,9 +71,7 @@ export function MyAppbar() {
             className={classes.avatar} 
             
           />
-          <Typography>
-            Jahongir
-          </Typography>
+          <p className={classes.myName}>Jahongir Hamidov</p>
 
         </div>
         <div className={classes.search}>
